@@ -12,4 +12,4 @@ You can also test an agent with ```python test.py```. But make sure to load weig
 
 All the constants are pretty self explanatory other than "vanilla" under agent which means DQN (true) or Double DQN (false). Defualt is vanilla DQN. 
 
-Note: If you get an unpickling error in [train](https://github.com/maxbren/GO-Bot-DRL/blob/master/train.py#L46) or [test](https://github.com/maxbren/GO-Bot-DRL/blob/master/test.py#L43) then run ```python pickle_converter.py``` and that should fix it
+Note: If you get an unpickling error in train or test then run ```python pickle_converter.py``` and that should fix it
