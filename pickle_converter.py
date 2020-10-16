@@ -14,14 +14,14 @@ def run(orig, dest):
     print("Done. Saved %s bytes." % (len(content) - outsize))
 
 
-original = "data/movie_db.pkl"
-destination = "data/movie_db.pkl"
+original = "data/covid_db.pkl"
+destination = "data/covid_db.pkl"
 run(original, destination)
 
-original = "data/movie_dict.pkl"
-destination = "data/movie_dict.pkl"
+original = "data/covid_dict.pkl"
+destination = "data/covid_dict.pkl"
 run(original, destination)
 
-original = "data/movie_user_goals.pkl"
-destination = "data/movie_user_goals.pkl"
+original = "data/covid_user_goals.pkl"
+destination = "data/covid_user_goals.pkl"
 run(original, destination)

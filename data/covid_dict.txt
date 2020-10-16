@@ -1,0 +1,1 @@
+{'city': ['hamilton', 'manville', 'bridgewater'], 'theater': ['manville 12 plex', 'amc dine-in theatres bridgewater 7', 'bridgewater'], 'zip': ['08835'], 'critic_rating': ['good'], 'genre': ['comedy'], 'state': ['nj'], 'starttime': ['10:30am'], 'date': ['tomorrow'], 'moviename': ['zootopia']}

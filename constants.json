@@ -1,8 +1,8 @@
 {
   "db_file_paths": {
-    "database": "data/movie_db.pkl",
-    "dict": "data/movie_dict.pkl",
-    "user_goals": "data/movie_user_goals.pkl"
+    "database": "data/covid_db.pkl",
+    "dict": "data/covid_dict.pkl",
+    "user_goals": "data/covid_user_goals.pkl"
   },
   "run": {
     "usersim": false,
@@ -13,8 +13,8 @@
     "success_rate_threshold": 0.3
   },
   "agent": {
-    "save_weights_file_path": "",
-    "load_weights_file_path": "",
+    "save_weights_file_path": "weights/testmodel.h5",
+    "load_weights_file_path": "weights/testmodel.h5",
     "vanilla": true,
     "learning_rate": 1e-3,
     "batch_size": 16,
