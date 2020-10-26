@@ -5,7 +5,7 @@ from state_tracker import StateTracker
 import pickle, argparse, json, math
 from utils import remove_empty_slots
 from user import User
-
+import json
 
 if __name__ == "__main__":
     # Can provide constants file path in args OR run it as is and change 'CONSTANTS_FILE_PATH' below
@@ -41,9 +41,8 @@ if __name__ == "__main__":
     MAX_ROUND_NUM = run_dict['max_round_num']
     SUCCESS_RATE_THRESHOLD = run_dict['success_rate_threshold']
 
-    # Load movie DB
-    # Note: If you get an unpickling error here then run 'pickle_converter.py' and it should fix it
-    database = pickle.load(open(DATABASE_FILE_PATH, 'rb'), encoding='latin1')
+    database = open(DATABASE_FILE_PATH, "r").read()
+    database = json.loads(database)
 
     # Clean DB
     remove_empty_slots(database)

@@ -11,5 +11,3 @@ In constants.json you can change hyperparameters including "save_weights_file_pa
 You can also test an agent with ```python test.py```. But make sure to load weights by setting "load_weights_file_path" in constants.json to a relative path with both behavior and target weights. 
 
 All the constants are pretty self explanatory other than "vanilla" under agent which means DQN (true) or Double DQN (false). Defualt is vanilla DQN. 
-
-Note: If you get an unpickling error in train or test then run ```python pickle_converter.py``` and that should fix it
