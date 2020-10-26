@@ -1,11 +1,11 @@
 {
   "db_file_paths": {
     "database": "data/covid_db.txt",
-    "dict": "data/covid_dict.pkl",
-    "user_goals": "data/covid_user_goals.pkl"
+    "dict": "data/covid_dict.txt",
+    "user_goals": "data/covid_user_goals.txt"
   },
   "run": {
-    "usersim": false,
+    "usersim": true,
     "warmup_mem": 1000,
     "num_ep_run": 40000,
     "train_freq": 100,

@@ -41,6 +41,10 @@ if __name__ == "__main__":
     MAX_ROUND_NUM = run_dict['max_round_num']
     SUCCESS_RATE_THRESHOLD = run_dict['success_rate_threshold']
 
+    # Load movie DB
+    #database = pickle.load(open("data/covid_db.pkl", 'rb'), encoding='latin1')
+
+    # Load COVID DB
     database = open(DATABASE_FILE_PATH, "r").read()
     database = json.loads(database)
 
@@ -48,10 +52,18 @@ if __name__ == "__main__":
     remove_empty_slots(database)
 
     # Load movie dict
-    db_dict = pickle.load(open(DICT_FILE_PATH, 'rb'), encoding='latin1')
+    #db_dict = pickle.load(open("data/covid_dict.pkl", 'rb'), encoding='latin1')
 
-    # Load goal File
-    user_goals = pickle.load(open(USER_GOALS_FILE_PATH, 'rb'), encoding='latin1')
+    # Load COVID dict
+    db_dict = open(DICT_FILE_PATH, "r").read()
+    db_dict = json.loads(db_dict)
+
+    # Load movie goals
+    #user_goals = pickle.load(open("data/covid_user_goals.pkl", 'rb'), encoding='latin1')
+
+    # Load COVID goals
+    user_goals = open(USER_GOALS_FILE_PATH, "r").read()
+    user_goals = json.loads(user_goals)
 
     # Init. Objects
     if USE_USERSIM:
