@@ -1,4 +1,7 @@
 {
+"age": ["18", "19", "20", "21"],
+"experiencingbreathlessness": ["yes", "no"],
+"sorethroat": ["yes", "no"],
 "city": ["manville"],
 "numberofpeople": ["2"],
 "theater": ["manville 12 plex"],

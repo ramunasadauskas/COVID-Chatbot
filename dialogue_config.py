@@ -22,7 +22,7 @@ usersim_required_init_inform_keys = ['moviename']
 
 # Possible inform and request slots for the agent
 agent_inform_slots = [usersim_default_key]
-agent_request_slots = ['moviename', 'theater', 'starttime', 'date', 'numberofpeople', 'genre', 'city', 'zip']
+agent_request_slots = ['moviename', 'theater', 'starttime', 'date', 'numberofpeople', 'genre', 'city', 'zip', 'age']
 
 # Possible actions for agent
 agent_actions = [
@@ -38,7 +38,7 @@ for slot in agent_request_slots:
     agent_actions.append({'intent': 'request', 'inform_slots': {}, 'request_slots': {slot: 'UNK'}})
 
 # Rule-based policy request list
-rule_requests = ['moviename', 'starttime', 'city', 'date', 'theater', 'numberofpeople']
+rule_requests = ['moviename', 'starttime', 'city', 'date', 'theater', 'numberofpeople', 'age']
 
 # These are possible inform slot keys that cannot be used to query
 no_query_keys = ['numberofpeople', usersim_default_key]
@@ -56,5 +56,5 @@ SUCCESS = 1
 all_intents = ['inform', 'request', 'done', 'match_found', 'thanks', 'reject']
 
 # All possible slots (for one-hot conversion in ST.get_state())
-all_slots = ['city', 'date', 'genre', 'moviename', 'numberofpeople', 'starttime',
+all_slots = ['age', 'experiencingbreathlessness', 'sorethroat', 'city', 'date', 'genre', 'moviename', 'numberofpeople', 'starttime',
              'theater', 'zip', 'result', usersim_default_key]
