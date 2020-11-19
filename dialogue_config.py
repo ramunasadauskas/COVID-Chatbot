@@ -22,11 +22,9 @@ usersim_required_init_inform_keys = ['moviename']
 
 # Possible inform and request slots for the agent
 agent_inform_slots = ['moviename', 'theater', 'starttime', 'date', 'genre', 'state', 'city', 'zip', 'critic_rating',
-                      'mpaa_rating', 'distanceconstraints', 'video_format', 'theater_chain', 'price', 'actor',
-                      'description', 'other', 'numberofkids', usersim_default_key]
+                      usersim_default_key]
 agent_request_slots = ['moviename', 'theater', 'starttime', 'date', 'numberofpeople', 'genre', 'state', 'city', 'zip',
-                       'critic_rating', 'mpaa_rating', 'distanceconstraints', 'video_format', 'theater_chain', 'price',
-                       'actor', 'description', 'other', 'numberofkids']
+                       'critic_rating']
 
 # Possible actions for agent
 agent_actions = [
@@ -60,7 +58,7 @@ SUCCESS = 1
 all_intents = ['inform', 'request', 'done', 'match_found', 'thanks', 'reject']
 
 # All possible slots (for one-hot conversion in ST.get_state())
-all_slots = ['actor', 'actress', 'city', 'critic_rating', 'date', 'description', 'distanceconstraints',
-             'genre', 'greeting', 'implicit_value', 'movie_series', 'moviename', 'mpaa_rating',
-             'numberofpeople', 'numberofkids', 'other', 'price', 'seating', 'starttime', 'state',
-             'theater', 'theater_chain', 'video_format', 'zip', 'result', usersim_default_key, 'mc_list']
+all_slots = ['actress', 'city', 'critic_rating', 'date',
+             'genre', 'implicit_value', 'movie_series', 'moviename',
+             'numberofpeople', 'seating', 'starttime', 'state',
+             'theater', 'zip', 'result', usersim_default_key, 'mc_list']
