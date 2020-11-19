@@ -21,9 +21,9 @@ usersim_required_init_inform_keys = ['moviename']
 #######################################
 
 # Possible inform and request slots for the agent
-agent_inform_slots = ['moviename', 'theater', 'starttime', 'date', 'genre', 'state', 'city', 'zip', 'critic_rating',
+agent_inform_slots = ['moviename', 'theater', 'starttime', 'date', 'genre', 'city', 'zip', 'critic_rating',
                       usersim_default_key]
-agent_request_slots = ['moviename', 'theater', 'starttime', 'date', 'numberofpeople', 'genre', 'state', 'city', 'zip',
+agent_request_slots = ['moviename', 'theater', 'starttime', 'date', 'numberofpeople', 'genre', 'city', 'zip',
                        'critic_rating']
 
 # Possible actions for agent
@@ -60,5 +60,5 @@ all_intents = ['inform', 'request', 'done', 'match_found', 'thanks', 'reject']
 # All possible slots (for one-hot conversion in ST.get_state())
 all_slots = ['actress', 'city', 'critic_rating', 'date',
              'genre', 'implicit_value', 'movie_series', 'moviename',
-             'numberofpeople', 'seating', 'starttime', 'state',
+             'numberofpeople', 'seating', 'starttime',
              'theater', 'zip', 'result', usersim_default_key, 'mc_list']

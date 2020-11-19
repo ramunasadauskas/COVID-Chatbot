@@ -83,6 +83,9 @@ def run_round(state, warmup=False):
     # 3) User takes action given agent action
     user_action, reward, done, success = user.step(agent_action)
 
+    #if success == True:
+        #print("success")
+
     if not done:
         # 4) Infuse error into semantic frame level of user action
         emc.infuse_error(user_action)

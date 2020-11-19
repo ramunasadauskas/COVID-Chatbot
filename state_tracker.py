@@ -168,11 +168,11 @@ class StateTracker:
                 agent_action['inform_slots'] = copy.deepcopy(value)
                 agent_action['inform_slots'][self.match_key] = str(key)
 
-                print('ticket found')
+                #print('ticket found')
             else:
                 agent_action['inform_slots'][self.match_key] = 'no match available'
 
-                print('no tickets')
+                #print('no tickets')
             self.current_informs[self.match_key] = agent_action['inform_slots'][self.match_key]
         agent_action.update({'round': self.round_num, 'speaker': 'Agent'})
         self.history.append(agent_action)

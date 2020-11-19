@@ -1,3 +1,3 @@
 [
-{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"moviename": "zootopia", "starttime": "10:30am", "city": "manville", "theater": "manville 12 plex", "state": "mi", "numberofpeople": "2", "date": "tomorrow"}}
+{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"moviename": "zootopia", "starttime": "10:30am", "city": "manville", "theater": "manville 12 plex", "numberofpeople": "2", "date": "tomorrow"}}
 ]

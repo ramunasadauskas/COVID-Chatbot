@@ -1,3 +1,3 @@
 {
-"1": {"city": "manville", "theater": "manville 12 plex", "zip": "08835", "critic_rating": "good", "genre": "comedy", "state": "nj", "starttime": "10:30am", "date": "tomorrow", "moviename": "zootopia"}
+"1": {"city": "manville", "theater": "manville 12 plex", "zip": "08835", "critic_rating": "good", "genre": "comedy", "starttime": "10:30am", "date": "tomorrow", "moviename": "zootopia", "numberofpeople": "2"}
 }
