@@ -3,7 +3,6 @@
 "numberofpeople": ["2"],
 "theater": ["manville 12 plex"],
 "zip": ["08835"],
-"critic_rating": ["good"],
 "starttime": ["10:30am"],
 "date": ["tomorrow"],
 "genre": ["comedy"],
