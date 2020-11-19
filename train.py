@@ -82,6 +82,7 @@ def run_round(state, warmup=False):
     state_tracker.update_state_agent(agent_action)
     # 3) User takes action given agent action
     user_action, reward, done, success = user.step(agent_action)
+
     if not done:
         # 4) Infuse error into semantic frame level of user action
         emc.infuse_error(user_action)
@@ -145,6 +146,9 @@ def train_run():
 
         period_success_total += success
 
+        #if success == 1:
+            #print('success')
+
         # Train
         if episode % TRAIN_FREQ == 0:
             # Check success rate
@@ -185,6 +189,8 @@ def episode_reset():
     state_tracker.update_state_user(user_action)
     # Finally, reset agent
     dqn_agent.reset()
+
+    #print('episode reset')
 
 
 warmup_run()

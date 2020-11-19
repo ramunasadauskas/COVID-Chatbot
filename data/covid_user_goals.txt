@@ -1,1 +1,3 @@
-[{"request_slots": {"date": "UNK", "theater": "UNK", "starttime": "UNK"}, "diaact": "request" , "inform_slots": {"city": "portland", "state": "oregon", "numberofpeople": "5", "moviename": "star wars"}}, {"request_slots": {}, "diaact" : "request" , "inform_slots" : {"city": "seattle", "numberofpeople": "2", "theater": "regal meridian 16", "starttime": "9:10 pm", "date": "tomorrow", "moviename": "zootopia"}}]
+[
+{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"moviename": "zootopia", "starttime": "10:30am", "city": "manville", "theater": "manville 12 plex", "state": "mi", "numberofpeople": "2", "date": "tomorrow"}}
+]
