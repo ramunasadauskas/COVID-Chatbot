@@ -1,3 +1,4 @@
 {
-"get tested and isolate until you receive your test results": {"age": "20", "sorethroat": "mild"}
+"get tested and isolate until you receive your test results": {"age": "20", "sorethroat": "yes"}
+"get tested and isolate until you receive your test results": {"age": "20", "sorethroat": ""}
 }

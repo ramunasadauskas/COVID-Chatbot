@@ -83,13 +83,11 @@ def run_round(state, warmup=False):
     # 3) User takes action given agent action
     user_action, reward, done, success = user.step(agent_action)
 
-    if success == True:
-        print("success")
     #print(success)
 
-    if not done:
+    #if not done:
         # 4) Infuse error into semantic frame level of user action
-        emc.infuse_error(user_action)
+        #emc.infuse_error(user_action)
     # 5) Update state tracker with user action
     state_tracker.update_state_user(user_action)
     # 6) Get next state and add experience
@@ -150,8 +148,9 @@ def train_run():
 
         period_success_total += success
 
-        #if success == 1:
-            #print('success')
+        #if success == True:
+            #print("success")
+        print(success)
 
         # Train
         if episode % TRAIN_FREQ == 0:
@@ -188,7 +187,7 @@ def episode_reset():
     # Then pick an init user action
     user_action = user.reset()
     # Infuse with error
-    emc.infuse_error(user_action)
+    #emc.infuse_error(user_action)
     # And update state tracker
     state_tracker.update_state_user(user_action)
     # Finally, reset agent

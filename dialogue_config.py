@@ -22,7 +22,7 @@ usersim_required_init_inform_keys = ['age']
 
 # Possible inform and request slots for the agent
 agent_inform_slots = [usersim_default_key]
-agent_request_slots = ['age', 'sorethroat']
+agent_request_slots = ['age', 'gender', 'sorethroat', "test"]
 
 # Possible actions for agent
 agent_actions = [
@@ -38,7 +38,7 @@ for slot in agent_request_slots:
     agent_actions.append({'intent': 'request', 'inform_slots': {}, 'request_slots': {slot: 'UNK'}})
 
 # Rule-based policy request list
-rule_requests = ['age', 'sorethroat']
+rule_requests = ['age', 'gender', 'sorethroat', "test"]
 
 # These are possible inform slot keys that cannot be used to query
 no_query_keys = [usersim_default_key]
@@ -56,4 +56,4 @@ SUCCESS = 1
 all_intents = ['inform', 'request', 'done', 'match_found', 'thanks', 'reject']
 
 # All possible slots (for one-hot conversion in ST.get_state())
-all_slots = ['age', 'sorethroat', usersim_default_key]
+all_slots = ['age', 'gender', 'sorethroat', "test", usersim_default_key]
