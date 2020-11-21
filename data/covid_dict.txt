@@ -1,13 +1,9 @@
 {
-"age": ["18", "19", "20", "21"],
-"experiencingbreathlessness": ["yes", "no"],
-"sorethroat": ["yes", "no"],
-"city": ["manville"],
-"numberofpeople": ["2"],
-"theater": ["manville 12 plex"],
-"zip": ["08835"],
-"starttime": ["10:30am"],
-"date": ["tomorrow"],
-"genre": ["comedy"],
-"moviename": ["zootopia"]
+"age": ["15", "16", "17", "18", "19", "20", "21", "22"],
+"gender": ["male", "female"],
+"fever": ["none", "mild", "severe"],
+"sorethroat": ["none", "mild", "severe"],
+"runnynose": ["yes", "no"],
+"breathlessness": ["yes", "no"],
+"blueinface": ["yes", "no"]
 }

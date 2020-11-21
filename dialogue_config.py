@@ -14,7 +14,7 @@ usersim_intents = ['inform', 'request', 'thanks', 'reject', 'done']
 usersim_default_key = 'whattodo'
 
 # Required to be in the first action in inform slots of the usersim if they exist in the goal inform slots
-usersim_required_init_inform_keys = ['moviename']
+usersim_required_init_inform_keys = ['age']
 
 #######################################
 # Agent Config
@@ -22,7 +22,7 @@ usersim_required_init_inform_keys = ['moviename']
 
 # Possible inform and request slots for the agent
 agent_inform_slots = [usersim_default_key]
-agent_request_slots = ['moviename', 'theater', 'starttime', 'date', 'numberofpeople', 'genre', 'city', 'zip', 'age']
+agent_request_slots = ['age', 'gender', 'fever', 'sorethroat', 'runnynose', 'breathlessness', 'blueinface']
 
 # Possible actions for agent
 agent_actions = [
@@ -38,10 +38,10 @@ for slot in agent_request_slots:
     agent_actions.append({'intent': 'request', 'inform_slots': {}, 'request_slots': {slot: 'UNK'}})
 
 # Rule-based policy request list
-rule_requests = ['moviename', 'starttime', 'city', 'date', 'theater', 'numberofpeople', 'age']
+rule_requests = ['age', 'gender', 'fever', 'sorethroat', 'runnynose', 'breathlessness', 'blueinface']
 
 # These are possible inform slot keys that cannot be used to query
-no_query_keys = ['numberofpeople', usersim_default_key]
+no_query_keys = [usersim_default_key]
 
 #######################################
 # Global config
@@ -56,5 +56,4 @@ SUCCESS = 1
 all_intents = ['inform', 'request', 'done', 'match_found', 'thanks', 'reject']
 
 # All possible slots (for one-hot conversion in ST.get_state())
-all_slots = ['age', 'experiencingbreathlessness', 'sorethroat', 'city', 'date', 'genre', 'moviename', 'numberofpeople', 'starttime',
-             'theater', 'zip', 'result', usersim_default_key]
+all_slots = ['age', 'gender', 'fever', 'sorethroat', 'runnynose', 'breathlessness', 'blueinface', usersim_default_key]

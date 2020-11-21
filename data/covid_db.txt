@@ -1,3 +1,5 @@
 {
-"get tested and isolate until you receive your test results": {"city": "manville", "theater": "manville 12 plex", "zip": "08835", "genre": "comedy", "starttime": "10:30am", "date": "tomorrow", "moviename": "zootopia", "numberofpeople": "2", "age": "20"}
+"get tested and isolate until you receive your test results": {"age": "20", "" "fever": "mild", "sorethroat": "mild", "runnynose": "yes", "breathlessness": "no", "blueinface": "no"},
+"call 000 immediately": {"age": "20", "fever": "mild", "sorethroat": "severe", "runnynose": "yes", "breathlessness": "yes", "blueinface": "no"},
+"call 000 immediately": {"age": "20", "fever": "mild", "sorethroat": "severe", "runnynose": "yes", "breathlessness": "yes", "blueinface": "yes"}
 }
