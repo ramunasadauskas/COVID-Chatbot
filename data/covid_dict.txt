@@ -1,9 +1,4 @@
 {
 "age": ["15", "16", "17", "18", "19", "20", "21", "22"],
-"gender": ["male", "female"],
-"fever": ["none", "mild", "severe"],
-"sorethroat": ["none", "mild", "severe"],
-"runnynose": ["yes", "no"],
-"breathlessness": ["yes", "no"],
-"blueinface": ["yes", "no"]
+"sorethroat": ["none", "mild", "severe"]
 }

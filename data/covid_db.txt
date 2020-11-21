@@ -1,5 +1,3 @@
 {
-"get tested and isolate until you receive your test results": {"age": "20", "" "fever": "mild", "sorethroat": "mild", "runnynose": "yes", "breathlessness": "no", "blueinface": "no"},
-"call 000 immediately": {"age": "20", "fever": "mild", "sorethroat": "severe", "runnynose": "yes", "breathlessness": "yes", "blueinface": "no"},
-"call 000 immediately": {"age": "20", "fever": "mild", "sorethroat": "severe", "runnynose": "yes", "breathlessness": "yes", "blueinface": "yes"}
+"get tested and isolate until you receive your test results": {"age": "20", "sorethroat": "mild"}
 }
