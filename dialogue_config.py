@@ -21,7 +21,7 @@ usersim_required_init_inform_keys = ['age']
 #######################################
 
 # Possible inform and request slots for the agent
-agent_inform_slots = ['age', 'gender', 'fever', 'sorethroat', 'runnynose', usersim_default_key]
+agent_inform_slots = [usersim_default_key]
 agent_request_slots = ['age', 'gender', 'fever', 'sorethroat', 'runnynose', 'rapidbreathing', 'blueinface']
 
 # Possible actions for agent
