@@ -2,7 +2,7 @@ from user_simulator import UserSimulator
 from error_model_controller import ErrorModelController
 from dqn_agent import DQNAgent
 from state_tracker import StateTracker
-import pickle, argparse, json, math
+import argparse
 from utils import remove_empty_slots
 from user import User
 import json
@@ -41,9 +41,6 @@ if __name__ == "__main__":
     MAX_ROUND_NUM = run_dict['max_round_num']
     SUCCESS_RATE_THRESHOLD = run_dict['success_rate_threshold']
 
-    # Load movie DB
-    #database = pickle.load(open("data/covid_db.pkl", 'rb'), encoding='latin1')
-
     # Load COVID DB
     database = open(DATABASE_FILE_PATH, "r").read()
     database = json.loads(database)
@@ -51,15 +48,9 @@ if __name__ == "__main__":
     # Clean DB
     remove_empty_slots(database)
 
-    # Load movie dict
-    #db_dict = pickle.load(open("data/covid_dict.pkl", 'rb'), encoding='latin1')
-
     # Load COVID dict
     db_dict = open(DICT_FILE_PATH, "r").read()
     db_dict = json.loads(db_dict)
-
-    # Load movie goals
-    #user_goals = pickle.load(open("data/covid_user_goals.pkl", 'rb'), encoding='latin1')
 
     # Load COVID goals
     user_goals = open(USER_GOALS_FILE_PATH, "r").read()
@@ -83,11 +74,9 @@ def run_round(state, warmup=False):
     # 3) User takes action given agent action
     user_action, reward, done, success = user.step(agent_action)
 
-    #print(success)
-
-    #if not done:
+    if not done:
         # 4) Infuse error into semantic frame level of user action
-        #emc.infuse_error(user_action)
+        emc.infuse_error(user_action)
     # 5) Update state tracker with user action
     state_tracker.update_state_user(user_action)
     # 6) Get next state and add experience
@@ -148,10 +137,6 @@ def train_run():
 
         period_success_total += success
 
-        #if success == True:
-            #print("success")
-        print(success)
-
         # Train
         if episode % TRAIN_FREQ == 0:
             # Check success rate
@@ -187,13 +172,11 @@ def episode_reset():
     # Then pick an init user action
     user_action = user.reset()
     # Infuse with error
-    #emc.infuse_error(user_action)
+    emc.infuse_error(user_action)
     # And update state tracker
     state_tracker.update_state_user(user_action)
     # Finally, reset agent
     dqn_agent.reset()
-
-    #print('episode reset')
 
 
 warmup_run()

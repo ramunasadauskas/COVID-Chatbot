@@ -1,4 +1,7 @@
 {
-"get tested and isolate until you receive your test results": {"age": "20", "sorethroat": "yes"}
-"get tested and isolate until you receive your test results": {"age": "20", "sorethroat": ""}
+"get tested and isolate until you receive your test results": {"sorethroat": "none", "runnynose": "no", "rapidbreathing": "no", "blueinface": "no", "age": "30", "gender": "male", "fever": "mild"},
+"do nothing, you probably don't have COVID-19": {"age": "75", "gender": "male", "fever": "none", "sorethroat": "none", "runnynose": "no", "rapidbreathing": "no", "blueinface": "no"},
+"call 000 immediately": {"age": "54", "gender": "male", "fever": "severe", "sorethroat": "no", "runnynose": "no", "rapidbreathing": "yes", "blueinface": "no"},
+"get tested and isolate until you receive your test results": {"rapidbreathing": "no", "blueinface": "no", "sorethroat": "none", "runnynose": "no", "fever": "mild", "age": "30", "gender": "male"},
+"call 000 immediately": {"age": "45", "gender": "male", "fever": "mild", "sorethroat": "severe", "runnynose": "no", "rapidbreathing": "yes", "blueinface": "yes"}
 }

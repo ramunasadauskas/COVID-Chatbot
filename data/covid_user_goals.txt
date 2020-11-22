@@ -1,3 +1,6 @@
 [
-{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"age": "20", "gender": "male", "sorethroat": "mild", "test": "one"}}
+{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"gender": "male", "fever": "mild", "rapidbreathing": "no", "sorethroat": "none", "runnynose": "no", "age": "30", "blueinface": "no"}},
+{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"fever": "none", "gender": "male", "sorethroat": "none", "runnynose": "no", "rapidbreathing": "no", "age": "75", "blueinface": "no"}},
+{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"runnynose": "no", "rapidbreathing": "yes", "blueinface": "no", "age": "54", "gender": "male", "fever": "severe", "sorethroat": "no"}},
+{"request_slots": {}, "diaact" : "request" , "inform_slots" : {"gender": "male", "age": "45", "sorethroat": "severe", "blueinface": "yes", "runnynose": "no", "fever": "mild", "rapidbreathing": "yes"}}
 ]
