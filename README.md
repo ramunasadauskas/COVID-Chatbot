@@ -2,7 +2,7 @@
 
 Based off of the code repos [GO-Bot-DRL](https://github.com/maxbren/GO-Bot-DRL) and [TC-Bot](https://github.com/MiuLab/TC-Bot) and paper [End-to-End Task-Completion Neural Dialogue Systems](http://aclweb.org/anthology/I17-1074).
 
-The database is of 'what to do' recomendations for COVID-19 symptoms.
+The database is of 'what to do' recommendations for COVID-19 symptoms.
 
 ## Dependencies
 - Python >= 3.5
